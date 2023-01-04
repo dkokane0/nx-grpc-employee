@@ -1,11 +1,3 @@
-// import { Module } from '@nestjs/common';
-// import { AppController } from './app.controller';
-
-// @Module({
-//   imports: [],
-//   controllers: [AppController],
-// })
-// export class AppModule {}
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { ClientsModule, Transport } from '@nestjs/microservices';

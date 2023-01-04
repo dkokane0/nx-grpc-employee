@@ -1,0 +1,19 @@
+syntax = "proto3";
+package employee;
+message EmployeeByID{
+    int32 id = 1;
+}
+
+message Employee{
+    int32 id = 1;
+    string name = 2;
+}
+
+message msg {
+    string msg = 1;
+}
+service employeeService{
+    rpc FindOne (EmployeeByID) returns (Employee){}
+    rpc hello (msg) returns (msg){}
+    
+}
